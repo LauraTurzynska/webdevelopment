@@ -12,5 +12,18 @@
 	include "nav.php";
 	?>
 	<h1>Home</h1>
+	<?php
+	$name = "Laura";
+	$lname = "Turzynska";
+	$age = "22";
+	
+	if(is_string($name)) {
+	echo "<p>Yes my name is indeed $name!<p>";	
+	}else {
+		echo "<p>I have no name<p>";
+	}	
+	?>
+	
+	<p>Hello my name is <?php echo $name, $lname?> I am <?php echo $age?> years old</p>
 </body>
 </html>
