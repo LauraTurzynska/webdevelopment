@@ -1,0 +1,35 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: lime;
+$secondary-color:purple;
+$sPad: 1rem;
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+nav {
+    background-color: #333;
+    color: $primary-color;
+    @include flex;
+
+   
+    ul {
+        display: inline-block;
+        list-style-type: none;
+        
+
+    }
+    a {
+        color: $primary-color;
+
+    }
+}
+h1 {
+color: $secondary-color;
+
+}
